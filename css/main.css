@@ -1,0 +1,169 @@
+
+/*Making the clearfix*/
+.clearfix::after{
+    content: "";
+    clear: both;
+    display: table;
+    }
+    
+    
+    /*For the whole page*/
+    body{
+        background-color: grey;
+        font-family: sans-serif;
+        width: 1024px;
+        margin: 0;
+    }
+    
+    
+    /*Modify the main header*/
+    header{
+        background-color: teal;
+        margin: 0;
+    }
+    
+    
+    /*Modify the whole navigator block,bar*/
+    nav.link ul{
+        list-style-type: none;
+        padding: 13px;
+        overflow: hidden;
+        margin: 0px;
+    }
+    
+    
+    /*Modify the FirstHeading*/
+    h1{
+        color: black;
+        position: relative;
+        float: left;
+        margin: 0;
+        padding: 1%;
+    }
+    
+    
+    /*Modify the links within the navigator*/
+    nav.link a{
+        margin-left: 40px;
+        text-decoration: none;
+        float: left;
+        background: aqua;
+        color: black;
+        margin: 0;
+        padding: 12px;
+        margin-left: 50px;
+        border-radius: 20%;
+        border-style: solid;
+        border-width: 2%;
+        border-color: purple;
+    }
+    
+    
+    /*NavBar Links, hover*/
+    nav.link a:hover{
+        background-color: orange;
+        text-decoration: underline;
+    }
+    
+    
+    /*Second header*/
+    h2.arth2{
+        margin-left: 2%;
+    }
+    
+    
+    /*Second header Paragraph*/
+    p.firstP {
+        background-color: lightblue;
+        margin-left: 2%;
+        margin-bottom: 2%;
+        border-style: solid;
+        border-width: 2%;
+    }
+    
+    
+    /*Make the articles display inline*/
+    section.articles{
+        width: 80%;
+        display: inline-block;
+    }
+    
+    
+    /*Clearfix on the articles*/
+    section.articles p.clearfix::after{
+        width: 50%;
+    }
+    
+    
+    /*Modify ArticleRight*/
+    article.one{
+        background-color: lightblue;
+        width: 45%;
+        float: right;
+        padding-bottom: 25%;
+        text-align: center;
+        border-style: solid;
+        border-width: 2%;
+
+    }
+    
+    
+    /*Modify ArticleLeft with Picture*/
+    article.two{
+        background-color: lightblue;
+        width: 45%;
+        margin-left: 2%;
+        padding-bottom:2%;
+        padding-right: 0%;
+        text-align: center;
+        display: inline-block;
+        border-style: solid;
+        border-width: 2%;
+    }
+    
+    
+    /*Modify all the paragraphs in ArticleRight*/
+    .one p{
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+    
+    
+    /*Modify all the paragraphs in ArticleLeft*/
+    .two p{
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+    
+    
+    /*Modify the second paragraph in ArticleLeft*/
+    .twoP{
+        font-weight: bold;
+        color: blue;
+    }
+    
+    
+    /*Modify the sidebox*/
+    aside{
+        float: right;
+        background-color: seagreen;
+        padding-right: 2%;
+        padding-bottom: 28%;
+        border-style: solid;
+        border-width: 2%;
+    }
+    
+    
+    /*Modify the sidebox header*/
+    aside h2{
+        padding-left: 4%;
+    }
+    
+    
+    /*Modify the footer*/
+    footer{
+        background: purple;
+        display: block;
+        padding: 10px;
+        margin-top: 2%;
+    }
